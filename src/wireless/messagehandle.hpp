@@ -2,6 +2,7 @@
 #define MESSAGEHANDLE_HPP
 
 #include "Arduino.h"
+#include "message433.hpp"
 
 #define TX_RING_BUF_LEN		8
 
@@ -19,7 +20,9 @@
 #define TXE_META_DIS_FLAG	0x08
 #define TXE_META_ALR_SENT	0x10
 #define TXE_META_OPN_CPORT	0x80
-		
+
+#define MSG_HANDLE_OPENCOM		1
+#define MSG_HANDLE_AVAILABLE	2
 
 struct TxElement 
 {
@@ -45,6 +48,9 @@ struct MessageHandle {
 	static uint8_t ring_buf_tx_meta[TX_RING_BUF_LEN][3];
 	static uint8_t ring_buf_tx_indx_last;
 	static uint8_t ring_buf_tx_indx_curr;
+	
+	static uint8_t currTxBufIndx;
+	static uint8_t prevTxBufIndx;
 	
 	static uint8_t update();
 	

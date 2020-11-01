@@ -11,6 +11,9 @@ uint8_t MessageHandle::ring_buf_tx_meta[TX_RING_BUF_LEN][3];
 uint8_t MessageHandle::ring_buf_tx_indx_last;
 uint8_t MessageHandle::ring_buf_tx_indx_curr;
 
+uint8_t MessageHandle::currTxBufIndx = 0;
+uint8_t MessageHandle::prevTxBufIndx = 0;
+
 uint8_t MessageHandle::update()
 {
 	if(Transceiver433::available()){
