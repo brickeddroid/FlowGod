@@ -1,9 +1,9 @@
 /*generated file heatpage.cpp*/
 #include "climatepage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
-#include "../sensor.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
+#include "../../sensors/sensor.hpp"
 #include "string.hpp"
 
 //ctor

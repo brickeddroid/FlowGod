@@ -1,8 +1,8 @@
 /*generated file pumppage.cpp*/
 #include "pumppage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
 #include "string.hpp"
 
 //ctor

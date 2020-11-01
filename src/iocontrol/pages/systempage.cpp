@@ -1,9 +1,9 @@
 /*generated file systempage.cpp*/
 #include "systempage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
-#include "../memoryhandle.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
+#include "../../data/memoryhandle.hpp"
 #include "string.hpp"
 
 //ctor

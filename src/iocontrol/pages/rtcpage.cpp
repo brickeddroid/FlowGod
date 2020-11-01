@@ -1,11 +1,11 @@
 /*generated file rtcpage.cpp*/
 #include "rtcpage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
 #include "string.hpp"
 
-#include "../rtc.hpp"
+#include "../../sensors/rtc.hpp"
 
 //ctor
 RtcPage::RtcPage()

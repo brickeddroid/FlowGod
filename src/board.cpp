@@ -1,19 +1,19 @@
 /*generated file board.cpp*/
 #include "board.hpp"
 
-#include "iohandle.hpp"
+#include "iocontrol/iohandle.hpp"
 
-#include "data.hpp"
-#include "helper.hpp"
-#include "sensor.hpp"
-#include "rtc.hpp"
-#include "memoryhandle.hpp"
+#include "data/data.hpp"
+#include "data/helper.hpp"
+#include "sensors/sensor.hpp"
+#include "sensors/rtc.hpp"
+#include "data/memoryhandle.hpp"
 
-#include "lightdevice.hpp"
-#include "lcooldevice.hpp"
-#include "climatedevice.hpp"
-#include "pwmdevice.hpp"
-#include "pumpdevice.hpp"
+#include "device/lightdevice.hpp"
+#include "device/lcooldevice.hpp"
+#include "device/climatedevice.hpp"
+#include "device/pwmdevice.hpp"
+#include "device/pumpdevice.hpp"
 
 Timer Board::sensT;
 

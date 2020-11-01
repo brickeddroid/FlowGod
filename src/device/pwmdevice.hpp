@@ -3,7 +3,7 @@
 #define PWMDEVICE_HPP
 
 #include "idevice.hpp"
-#include "pidhandle.hpp"
+#include "../sensors/pidhandle.hpp"
 
 #define PWM_TIMEOUT				DEVC_BYTE0
 #define PWM_FULLTHROTTLE_ACTIVE	DEVC_BYTE1

@@ -2,8 +2,8 @@
 #define IDEVICE_HPP
 
 #include "Arduino.h"
-#include "timer.hpp"
-#include "remotecontrol.hpp"
+#include "../sensors/timer.hpp"
+#include "../wireless/remotecontrol.hpp"
 
 #define DEVC_ACTIVE		1
 #define DEVC_ON			2

@@ -1,9 +1,9 @@
 /*generated file lightpage.cpp*/
 #include "lightpage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
-#include "../lightdevice.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
+#include "../../device/lightdevice.hpp"
 #include "string.hpp"
 
 //ctor

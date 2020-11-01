@@ -1,7 +1,7 @@
 #include "ipage.hpp"
 
 #include "string.hpp"
-#include "../data.hpp"
+#include "../../data/data.hpp"
 
 uint8_t IPage::menulvl = MENU_AUTO;
 

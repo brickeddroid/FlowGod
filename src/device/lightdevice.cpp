@@ -1,10 +1,10 @@
 /*generated file lightdevice.cpp*/
 #include "lightdevice.hpp"
 
-#include "data.hpp"
-#include "helper.hpp"
-#include "rtc.hpp"
-#include "sensor.hpp"
+#include "../data/data.hpp"
+#include "../data/helper.hpp"
+#include "../sensors/rtc.hpp"
+#include "../sensors/sensor.hpp"
 
 bool LightDevice::isStateNominal()
 {

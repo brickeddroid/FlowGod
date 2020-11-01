@@ -3,7 +3,7 @@
 #define BOARD_HPP
 
 #include "Arduino.h"
-#include "timer.hpp"
+#include "sensors/timer.hpp"
 
 #define BRD_SENS_R_INTVAL	666
 

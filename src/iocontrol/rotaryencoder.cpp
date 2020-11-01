@@ -1,7 +1,7 @@
 #include "rotaryencoder.hpp"
 
 #include "dynamicvalue.hpp"
-#include "data.hpp"
+#include "../data/data.hpp"
 
 volatile uint8_t RotaryEncoder::flag = 0;
 

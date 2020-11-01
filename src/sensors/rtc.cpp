@@ -1,7 +1,7 @@
 #include "rtc.hpp"
 
 #include "HW_AVR.h"
-#include "data.hpp"
+#include "../data/data.hpp"
 
 #define REG_SEC		0x00
 #define REG_MIN		0x01

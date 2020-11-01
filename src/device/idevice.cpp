@@ -1,10 +1,10 @@
 /*generated file idevice.cpp*/
 #include "idevice.hpp"
 
-#include "data.hpp"
-#include "helper.hpp"
-#include "sensor.hpp"
-#include "rtc.hpp"
+#include "../data/data.hpp"
+#include "../data/helper.hpp"
+#include "../sensors/sensor.hpp"
+#include "../sensors/rtc.hpp"
 
 void IDevice::update()
 {

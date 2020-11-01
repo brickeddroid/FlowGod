@@ -3,7 +3,7 @@
 #define PUMPPAGE_HPP
 
 #include "idevicepage.hpp"
-#include "../pumpdevice.hpp"
+#include "../../device/pumpdevice.hpp"
 
 class PumpPage : public IDevicePage
 {

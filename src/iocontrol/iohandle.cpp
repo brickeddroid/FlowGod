@@ -13,11 +13,11 @@
 #include "pages/systempage.hpp"
 #include "pages/string.hpp"
 
-#include "data.hpp"
-#include "helper.hpp"
-#include "sensor.hpp"
-#include "rtc.hpp"
-#include "memoryhandle.hpp"
+#include "../data/data.hpp"
+#include "../data/helper.hpp"
+#include "../sensors/sensor.hpp"
+#include "../sensors/rtc.hpp"
+#include "../data/memoryhandle.hpp"
 
 Button IOHandle::btn(onClick, onLongPress);
 

@@ -2,8 +2,8 @@
 #define IPAGE_HPP
 
 #include "Arduino.h"
-#include "../board.hpp"
-#include "../idevice.hpp"
+#include "../../board.hpp"
+#include "../../device/idevice.hpp"
 #include "../dynamicvalue.hpp"
 
 

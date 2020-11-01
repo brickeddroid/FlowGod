@@ -1,7 +1,7 @@
 #include "sensor.hpp"
 
-#include "helper.hpp"
-#include "data.hpp"
+#include "../data/helper.hpp"
+#include "../data/data.hpp"
 
 Log::Log()
 {

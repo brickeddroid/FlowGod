@@ -1,8 +1,8 @@
 /*generated file idevicepage.cpp*/
 #include "idevicepage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
 #include "string.hpp"
 
 

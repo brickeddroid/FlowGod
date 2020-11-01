@@ -1,6 +1,8 @@
 #ifndef MESSAGE_TEST_HPP
 #define MESSAGE_TEST_HPP
 
+#include "Arduino.h"
+
 struct Message {
 	uint8_t rcvrAddr;
 	uint8_t cmd;

@@ -1,7 +1,7 @@
 /*generated file pumpdevice.cpp*/
 #include "pumpdevice.hpp"
 
-#include "data.hpp"
+#include "../data/data.hpp"
 
 //ctor
 PumpDevice::PumpDevice()

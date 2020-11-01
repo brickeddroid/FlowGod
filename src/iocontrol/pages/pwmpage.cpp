@@ -1,11 +1,11 @@
 /*generated file pwmpage.cpp*/
 #include "pwmpage.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
-#include "../pwmdevice.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
+#include "../../device/pwmdevice.hpp"
 #include "string.hpp"
-#include "../sensor.hpp"
+#include "../../sensors/sensor.hpp"
 
 //ctor
 PwmPage::PwmPage(uint8_t dvcindx)

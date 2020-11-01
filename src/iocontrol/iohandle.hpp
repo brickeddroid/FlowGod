@@ -4,7 +4,7 @@
 
 #include "Arduino.h"
 #include "button.hpp"
-#include "timer.hpp"
+#include "../sensors/timer.hpp"
 
 class IPage;
 

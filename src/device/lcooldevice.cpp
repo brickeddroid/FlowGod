@@ -1,9 +1,9 @@
 /*generated file lcooldevice.cpp*/
 #include "lcooldevice.hpp"
 
-#include "data.hpp"
-#include "helper.hpp""
-#include "sensor.hpp"
+#include "../data/data.hpp"
+#include "../data/helper.hpp""
+#include "../sensors/sensor.hpp"
 
 //ctor
 LCoolDevice::LCoolDevice()

@@ -1,9 +1,9 @@
 /*generated file sensorpage.cpp*/
 #include "sensorpage.hpp"
-#include "../sensor.hpp"
+#include "../../sensors/sensor.hpp"
 
-#include "../data.hpp"
-#include "../helper.hpp"
+#include "../../data/data.hpp"
+#include "../../data/helper.hpp"
 #include "string.hpp"
 
 //ctor

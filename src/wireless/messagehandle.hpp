@@ -1,6 +1,7 @@
 #ifndef MESSAGEHANDLE_HPP
 #define MESSAGEHANDLE_HPP
 
+#include "Arduino.h"
 
 #define TX_RING_BUF_LEN		8
 
