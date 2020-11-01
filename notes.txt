@@ -1,0 +1,97 @@
+-----listening-------------
+
+open (connection)
+    -send request
+    -get response in specified time, else no success
+
+begin (session)
+    -send openSession w unique session id
+    -get response in specified time, else no success
+
+transfer
+    -send message(s)
+    -wait for response(s)
+flow
+disposition
+detach (link)
+end (session)
+close (connection)
+
+----listening------------
+
+Layer3 => Open Session
+    If no session is opened on actors side, actor can open new session
+    set current and only valid address to the address of its counterpart(reactor)
+    If reactor is listening only, it can send a positive response on session request and sets current address to the address of the actor
+
+    If actor gets positive response from reactor => session is opened
+    else actor retries till max_transmission_count_\w_response is reached
+
+    if max_transmission_count_\w_response is reached, 
+    only actor can close the session, 
+    reactor switches to listening status
+    if the communication stucks at reactors' side, the actor is also responsible for closing the session
+
+If session is open
+    Layer2 => transmit frame
+         
+Layer1 => Byte transmission
+Layer0 => Bitwise transmission
+
+
+-------------Session--------------------------
+    receiver addr
+    command
+    data size (optional)
+    memory segment/address
+    segment address
+    
+    metainfo/statistics
+        sentFrames
+        lostFrames
+        receivedFrames     
+
+
+-------------Frame----------------------------
+Size: 12 Bytes
+
+Byte    Value
+0       Address Receiver (Counterpart)
+1       Address Sender
+2       Command
+3       MetaInfo (e.g. MemoryAddress)
+4-11    Data
+
+
+------------Commands------------------------
+OpenSession
+CloseSession
+Get
+Set
+Ping/BC
+
+
+
+Actor sends openSession
+wait
+
+Reactor receives openSession_cmd
+sends response if available and sets fixed address to its counterparts address
+
+Actor receives response => session opened and actor sets fixed address to its counterparts' address 
+Communcation pipe is open and can be used in both directions (bidirectional)
+
+Session open: both devices have changed their statuses from broadcast listener to a one-on-one communication channel
+Session closed: both devices reset their listener addresses to bc address and their statuses to listen_all
+
+Broadcast ping: receives addresses from all available devices
+
+Ping: a known address to check the functionality of the devices
+
+Get: request to get data of another device (volatile or persistent data)
+
+Set: request to copy the data of the actor to another device (reactor) 
+
+
+
+
