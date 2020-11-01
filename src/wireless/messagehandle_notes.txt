@@ -1,0 +1,33 @@
+Implementation Message Ringbuffer:
+
+Master (opens a communication port and responsible to close an existing communication port):
+
+sends message => waits for ack message => sends next message 
+
+if its receives the forelast ack message => sends back an closing comport message
+(=> receives the LAST_ACK message) => comport closed 
+
+Slave (waits for incoming communication):
+
+receives message => process message => sends ack message back
+
+if its receives the closing comport message => sends back the LAST_ACK message one time  
+=> comport closed
+
+
+
+Message {
+	Packet {
+		ReceiverAddress
+		SenderAddress
+		Command
+		MetaInformation
+		Payload0
+		Payload1
+		Payload2
+		Payload3
+		Payload4
+		Payload5
+	}
+}
+
